@@ -6,11 +6,13 @@ en:
   about: "About"
   contact: "Contact"
   hello: "Hello world"
+  welcome: "Welcome to the Sample App!"
   base_title: "Ruby on Rails Tutorial Sample App"
   tutorial: "Ruby on Rails Tutorial"
   author: "Michael Hartl"
   the: "The"
   by: "by"
+  error: "error"
   news: "News"
   sign_up: "Sign up"
   base_url: "http://www.railstutorial.org/"
@@ -42,3 +44,5 @@ en:
   users:
     new:
       body_1: "This will be a signup page for new users"
+      confirm: "Confirmation"
+      create: "Create my account"

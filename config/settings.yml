@@ -1,5 +1,7 @@
 maximum:
   name_length: 50
-  email_length: 25
+  email_length: 255
 minimum:
   pass_length: 3
+size:
+  avt: 80
