@@ -1,11 +1,11 @@
-<% provide :title, "Contact"%>
+<% provide :title, t(".title") %>
 <!DOCTYPE html>
 <html>
 <body>
-  <h1>Contact</h1>
+  <h1><%= t ".title" %></h1>
   <p>
-    Contact the Ruby on Rails Tutorial about the sample app at the
-    <a href="http://www.railstutorial.org/contact">contact page</a>.
+    <%= t ".body_1" %>
+    <a href="http://www.railstutorial.org/contact"><%= t ".body_2" %></a>.
   </p>
 </body>
 </html>
