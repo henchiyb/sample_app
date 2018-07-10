@@ -1,9 +1,10 @@
 source "https://rubygems.org"
-git_source(:github) { |repo| "https://github.com/#{repo}.git" }
+git_source(:github){|repo| "https://github.com/#{repo}.git"}
 
 ruby "2.5.1"
 
 gem "bootsnap", ">= 1.1.0", require: false
+gem "bootstrap-sass", "3.3.7"
 gem "coffee-rails", "~> 4.2"
 gem "jbuilder", "~> 2.5"
 gem "puma", "~> 3.11"
@@ -13,9 +14,11 @@ gem "sass-rails", "~> 5.0"
 gem "sqlite3"
 gem "turbolinks", "~> 5"
 gem "uglifier", ">= 1.3.0"
+gem "bcrypt", "3.1.12"
+gem "config"
 
 group :development, :test do
-  gem "byebug", platforms: %i[mri mingw x64_mingw]
+  gem "byebug", platforms: %i(mri mingw x64_mingw)
 end
 
 group :development do
@@ -25,4 +28,4 @@ group :development do
   gem "web-console", ">= 3.3.0"
 end
 
-gem "tzinfo-data", platforms: %i[mingw mswin x64_mingw jruby]
+gem "tzinfo-data", platforms: %i(mingw mswin x64_mingw jruby)

@@ -1,13 +1,27 @@
 en:
+  log_in: "Log in"
+  log_out: "Log out"
+  home: "Home"
+  help: "Help"
+  about: "About"
+  contact: "Contact"
   hello: "Hello world"
+  welcome: "Welcome to the Sample App!"
   base_title: "Ruby on Rails Tutorial Sample App"
   tutorial: "Ruby on Rails Tutorial"
+  author: "Michael Hartl"
+  the: "The"
+  by: "by"
+  news: "News"
+  sign_up: "Sign up"
   base_url: "http://www.railstutorial.org/"
   static_pages:
     home:
       title: "Home"
       body_1: "This is the home page for the "
       body_2: "sample application"
+      welcome: "Welcome to the Sample App"
+      sign_up_now: "Sign up now!"
     about:
       title: "About"
       body_1: "is a"
@@ -26,3 +40,8 @@ en:
       title: "Contact"
       body_1: "Contact the Ruby on Rails Tutorial about the sample app at the"
       body_2: "contact page"
+  users:
+    new:
+      body_1: "This will be a signup page for new users"
+      confirm: "Confirmation"
+      create: "Create my account"
