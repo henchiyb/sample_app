@@ -1,11 +1,13 @@
 maximum:
   name_length: 50
   email_length: 255
+  content: 140
 minimum:
   pass_length: 3
 size:
   avt: 80
   avt_user: 50
   number_users: 5
+  image_size: 400
 time:
   expired_time: <%= 2.hours.ago %>

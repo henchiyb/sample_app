@@ -25,11 +25,17 @@ class UsersController < ApplicationController
   end
 
   def show
-    return if @user&.activated
-    redirect_to root_url
+    if @user&.activated
+      @microposts = @user.microposts.page(params[:page])
+        .per(Settings.size.number_users)
+    else
+      redirect_to root_url
+    end
   end
 
-  def edit; end
+  def edit
+    @users
+  end
 
   def update
     if @user.update_attributes user_params
@@ -54,14 +60,6 @@ class UsersController < ApplicationController
   def user_params
     params.require(:user).permit(:name, :email, :password,
       :password_confirmation)
-  end
-
-  def logged_in_user
-    unless logged_in?
-      store_location
-      flash[:danger] = t "please_log_in"
-      redirect_to login_url
-    end
   end
 
   def correct_user
