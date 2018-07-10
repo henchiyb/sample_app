@@ -5,6 +5,7 @@ en:
   help: "Help"
   about: "About"
   contact: "Contact"
+  user_s: "Users"
   hello: "Hello world"
   welcome: "Welcome to the Sample App!"
   base_title: "Ruby on Rails Tutorial Sample App"
@@ -13,9 +14,13 @@ en:
   the: "The"
   by: "by"
   error: "error"
+  form_contain: "The form contains"
   news: "News"
   sign_up: "Sign up"
+  profile: "Profile"
+  settings: "Settings"
   base_url: "http://www.railstutorial.org/"
+  invalid_login: "Invalid email/password combination"
   static_pages:
     home:
       title: "Home"
