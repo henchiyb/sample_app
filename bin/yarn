@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-#!/usr/bin/env ruby
-=======
->>>>>>> 87bdd57... Add rubocop
 APP_ROOT = File.expand_path('..', __dir__)
 Dir.chdir(APP_ROOT) do
   begin
