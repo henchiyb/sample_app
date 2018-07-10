@@ -1,13 +1,13 @@
-<% provide :title, "Help"%>
+<% provide :title, t(".title") %>
 <!DOCTYPE html>
 <html>
 <body>
-  <h1>Help</h1>
-  <p>Get help on the Ruby on Rails Tutorial at the
-    <a href="http://www.railstutorial.org/help">Rails Tutorial help page</a>.
-    To get help on this sample app, see the
-    <a href="http://www.railstutorial.org/book"><em>Ruby on Rails Tutorial</em>
-    book</a>.
+  <h1><%= t ".title" %></h1>
+  <p><%= t ".body_1" %>
+    <a href="http://www.railstutorial.org/help"><%= t ".body_2" %></a>.
+    <%= t ".body_3" %>
+    <a href="http://www.railstutorial.org/book"><em><%= t "tutorial" %></em>
+    <%= t ".body_4" %></a>.
   </p>
 </body>
 </html>
