@@ -7,6 +7,9 @@ en:
   contact: "Contact"
   remember_me: "Remember me on this computer"
   user_s: "Users"
+  all_users: "All Users"
+  new_user: "New user?"
+  please_log_in: "Please log in!"
   hello: "Hello world"
   welcome: "Welcome to the Sample App!"
   base_title: "Ruby on Rails Tutorial Sample App"
@@ -27,6 +30,8 @@ en:
   settings: "Settings"
   base_url: "http://www.railstutorial.org/"
   invalid_login: "Invalid email/password combination"
+  user_deleted: "User deleted"
+  account: "Account"
   static_pages:
     home:
       title: "Home"
@@ -53,7 +58,16 @@ en:
       body_1: "Contact the Ruby on Rails Tutorial about the sample app at the"
       body_2: "contact page"
   users:
+    user:
+      confirm: "Are you sure?"
     new:
       body_1: "This will be a signup page for new users"
       confirm: "Confirmation"
       create: "Create my account"
+    edit:
+      edit_user: "Edit user"
+      update_profile: "Update your profile"
+      change: "change"
+      save_changes: "Save changes"
+    index:
+      delete: "Delete"

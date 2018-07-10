@@ -5,3 +5,5 @@ minimum:
   pass_length: 3
 size:
   avt: 80
+  avt_user: 50
+  number_users: 5
