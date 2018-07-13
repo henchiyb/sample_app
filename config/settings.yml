@@ -1,0 +1,5 @@
+maximum:
+  name_length: 50
+  email_length: 25
+minimum:
+  pass_length: 3
