@@ -21,6 +21,7 @@ gem "faker", "1.7.3"
 gem "kaminari"
 gem "ransack"
 gem "bootstrap-kaminari-views"
+gem "figaro"
 
 group :development, :test do
   gem "byebug", platforms: %i(mri mingw x64_mingw)

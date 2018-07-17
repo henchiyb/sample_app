@@ -31,7 +31,15 @@ en:
   base_url: "http://www.railstutorial.org/"
   invalid_login: "Invalid email/password combination"
   user_deleted: "User deleted"
+  user_deleted_failed: "User delete failed"
+  update_success: "Update success"
+  check_mail: "Please check your email to activate your account."
+  not_activate: "Account not activated. "
+  activated: "Account activated!"
+  invalid_activate: "Invalid activation link"
+  activate: "Activate"
   account: "Account"
+
   static_pages:
     home:
       title: "Home"
@@ -71,3 +79,11 @@ en:
       save_changes: "Save changes"
     index:
       delete: "Delete"
+      confirm: "Are you sure?"
+  user_mailer:
+    account_activation:
+      subject: "Account activation"
+      content: "Welcome to the Sample App! Click on the link below to activate
+        your account:"
+      hi: "Hi"
+      activate: "Activate"
