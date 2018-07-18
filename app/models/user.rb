@@ -1,9 +1,11 @@
 class User < ApplicationRecord
+  has_many :microposts, dependent: :destroy
+
   attr_accessor :remember_token, :activation_token, :reset_token
 
   before_save :email_downcase
   before_create :create_activation_digest
-  scope :activated, -> {where activated: true}
+  scope :activated, ->{where activated: true}
 
   validates :name, presence: true,
     length: {maximum: Settings.maximum.name_length}
@@ -42,7 +44,7 @@ class User < ApplicationRecord
   end
 
   def authenticated? attribute, token
-    digest = self.send "#{attribute}_digest"
+    digest = send "#{attribute}_digest"
     return false if digest.nil?
     BCrypt::Password.new(digest).is_password?(token)
   end
@@ -67,6 +69,10 @@ class User < ApplicationRecord
 
   def password_reset_expired?
     reset_sent_at < Settings.time.expired_time
+  end
+
+  def feed
+    Micropost.where("user_id = ?", id)
   end
 
   private
