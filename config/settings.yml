@@ -7,3 +7,5 @@ size:
   avt: 80
   avt_user: 50
   number_users: 5
+time:
+  expired_time: <%= 2.hours.ago %>

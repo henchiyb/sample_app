@@ -2,7 +2,8 @@ class UsersController < ApplicationController
   before_action :logged_in_user, only: [:index, :edit, :update, :show, :destroy]
   before_action :correct_user, only: [:edit, :update]
   before_action :admin_user, only: :destroy
-  before_action :find_user_by_id, only: [:edit, :show, :destroy :correct_user]
+  before_action :find_user_by_id, only: [:edit, :show, :update, :destroy,
+    :correct_user]
 
   def index
     @users = User.activated.page(params[:page]).per(Settings.size.number_users)
